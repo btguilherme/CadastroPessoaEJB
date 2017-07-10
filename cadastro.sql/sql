@@ -1,0 +1,9 @@
+
+CREATE TABLE public.pessoa
+(
+  id integer NOT NULL DEFAULT nextval('pessoa_id_seq'::regclass),
+  nome text,
+  email text,
+  nascimento date,
+  CONSTRAINT pessoa_pkey PRIMARY KEY (id)
+)
